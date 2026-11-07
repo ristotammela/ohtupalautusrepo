@@ -3,8 +3,8 @@ from player_reader import PlayerReader
 
 
 class StatisticsService:
-    def __init__(self, url):
-        reader = PlayerReader(url)
+    def __init__(self, PlayerReader):
+        reader = PlayerReader
 
         self._players = reader.get_players()
 
@@ -36,7 +36,7 @@ class StatisticsService:
 
         result = []
         i = 0
-        while i <= how_many:
+        while i < how_many:
             result.append(sorted_players[i])
             i += 1
 
