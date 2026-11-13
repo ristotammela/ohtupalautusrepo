@@ -3,3 +3,8 @@
 __pycache__/
 *.py[cod]
 .coverage
+
+# ignore test reports
+report.html
+log.html
+output.xml
